@@ -74,7 +74,7 @@ public class Withdrawl extends JFrame implements ActionListener {
                   if (textField.getText().equals("")) {
                       JOptionPane.showMessageDialog(null, "Please enter the Amount you want withdraw");
                   } else {
-                      Con c = new Con();
+                      Conn c = new Conn();
 
                       ResultSet resultSet = c.statement.executeQuery("select * from bank where pin='" + pin + "'");
                       int balance = 0;
